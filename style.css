@@ -11,21 +11,37 @@ img {
     width: 100%;
 }
 
+.col_bottom .col_top .col .col_wide .col_narrow {
+    flex-basis: 300px;
+    flex-grow: 1;
+
+}
+
+.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
 
 
 /*---------Tekst style---------*/
 
 h1 {
     /*    position: absolute;*/
+    /*
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.3em;
     text-transform: uppercase;
     font-size: 1.3rem;
     text-align: center;
     font-weight: 400;
+*/
     /*    left: 40vw;*/
 }
 
+/*
 h2 {
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.3em;
@@ -34,6 +50,7 @@ h2 {
     margin-top: 3rem;
     font-weight: 300;
 }
+*/
 
 h3 {
     font-family: 'Lato', sans-serif;
@@ -79,7 +96,7 @@ header {
     background-color: transparent;
     position: fixed;
     width: 100%;
-    z-index: 11;
+    z-index: 10000;
     height: 4rem;
     text-align: center;
     font-weight: 400;
@@ -383,16 +400,27 @@ section {
 
 #about {}
 
+
+
+
+
 #about .col_top {
+    flex-basis: 300px;
+    flex-grow: 1;
     background-image: url(img/about.jpg);
     background-size: cover;
+    overflow: hidden;
     width: 74vw;
-    height: 49vw;
+    height: 49.3vw;
+
     /*
     margin-left: auto;
     margin-right: auto;
 */
 }
+
+
+
 
 #footer {}
 
@@ -412,8 +440,12 @@ section {
     background-image: url(img/FB_CLOSE_Flyer.jpg);
     position: relative;
     background-size: cover;
-    width: 65vw;
-    height: 18vh;
+    /*    width: 100%;*/
+    /*    height: 100%*/
+
+    width: 74vw;
+    height: 42vw;
+
     /*
     margin-left: auto;
     margin-right: auto;
@@ -427,8 +459,8 @@ section {
 #kalender .img_1 {
     background-image: url(img/billeder_05_content/kalender_01.jpg);
     background-size: cover;
-    width: 200px;
-    height: 200px;
+    width: 74vw;
+    height: 74vw;
     /*
     margin-left: auto;
     margin-right: auto;
@@ -438,8 +470,8 @@ section {
 #kalender .img_2 {
     background-image: url(img/billeder_05_content/kalender_02.jpg);
     background-size: cover;
-    width: 200px;
-    height: 200px;
+    width: 74vw;
+    height: 74vw;
     /*
     margin-left: auto;
     margin-right: auto;
@@ -450,8 +482,8 @@ section {
 #kalender .img_3 {
     background-image: url(img/billeder_05_content/kalender_03.jpg);
     background-size: cover;
-    width: 200px;
-    height: 200px;
+    width: 74vw;
+    height: 74vw;
     /*
     margin-left: auto;
     margin-right: auto;
@@ -461,8 +493,8 @@ section {
 #new_program .col_top {
     background-image: url(img/billeder_05_content/New_Final_%20FLYER_JH.jpg);
     background-size: cover;
-    width: 65vw;
-    height: 16vh;
+    width: 74vw;
+    height: 41.7vw;
     /*
     margin-left: auto;
     margin-right: auto;
@@ -485,8 +517,8 @@ section {
 #onlineshop .store_1 {
     background-image: url(img/billeder_05_content/store_01.jpg);
     background-size: cover;
-    width: 65vw;
-    height: 65vw;
+    width: 74vw;
+    height: 74vw;
     /*
     margin-left: auto;
     margin-right: auto;
@@ -496,8 +528,8 @@ section {
 #onlineshop .store_2 {
     background-image: url(img/billeder_05_content/store_02.jpg);
     background-size: cover;
-    width: 65vw;
-    height: 65vw;
+    width: 74vw;
+    height: 74vw;
     /*
     margin-left: auto;
     margin-right: auto;
@@ -524,8 +556,8 @@ section {
 #shop_in_store .img_1 {
     background-image: url(img/billeder_05_content/1.jpg);
     background-size: cover;
-    width: 65vw;
-    height: 95vw;
+    width: 74vw;
+    height: 108.4vw;
     /*
     margin-left: auto;
     margin-right: auto;
@@ -535,8 +567,8 @@ section {
 #shop_in_store .img_2 {
     background-image: url(img/billeder_05_content/2);
     background-size: cover;
-    width: 65vw;
-    height: 95vw;
+    width: 74vw;
+    height: 108.4vw;
     /*
     margin-left: auto;
     margin-right: auto;
@@ -546,8 +578,8 @@ section {
 #shop_in_store .img_3 {
     background-image: url(img/billeder_05_content/3);
     background-size: cover;
-    width: 65vw;
-    height: 95vw;
+    width: 74vw;
+    height: 108.4vw;
     /*
     margin-left: auto;
     margin-right: auto;
@@ -557,8 +589,8 @@ section {
 #shop_in_store .img_4 {
     background-image: url(img/billeder_05_content/4);
     background-size: cover;
-    width: 65vw;
-    height: 95vw;
+    width: 74vw;
+    height: 108.4vw;
     /*
     margin-left: auto;
     margin-right: auto;
@@ -579,20 +611,27 @@ section {
 /*---------Books design---------*/
 
 
-#books_site {
-    width: 100%;
+#books_site .sectionwrapper {
+    /*    width: 100%;*/
+
+
     background-image: url(img/gallerybackground.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 75px;
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
 .scroll {
-
+    position: relative;
     display: flex;
     /*    flex-direction: row;*/
     overflow: scroll;
 
+    align-items: flex-end;
+    top: -140px;
     /*
     scroll-snap-type: x mandatory;
     overflow-x: scroll;
@@ -602,18 +641,26 @@ section {
 
 .scroll div img {
     /*    width: 20vw;*/
-    padding: 40px;
+    /*    padding: 40px;*/
+    margin-top: 80px;
+    margin-right: 90px;
+
+
 
 
     /*    height: 30vw;*/
     object-fit: cover;
+
+
 }
 
+/*
 .bog {
     padding: 1rem;
-    /*    scroll-snap-align: center;*/
+        scroll-snap-align: center;
 
 }
+*/
 
 .book_1 img {
     /*    background-image: url(books%2520small/bogudennavn.png); */
@@ -621,7 +668,7 @@ section {
 
     width: 65vw;
     height: 43vw;
-    padding: 1rem;
+    /*    padding: 1rem;*/
 
 
     /*
@@ -633,10 +680,26 @@ section {
 
 .book_2 img {
     /*    background-image: url(books%2520small/cyclops.png);*/
+    position: relative;
     background-size: cover;
     width: 65vw;
-    height: 98vw;
-    padding: 1rem;
+    height: 87vw;
+    box-shadow: 30px 15px 30px rgba(0, 0, 0, 0.5);
+    /*
+    box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.5),
+        2px 2px 30px rgba(0, 0, 0, 0.5),
+        3px 3px 30px rgba(0, 0, 0, 0.5),
+        4px 4px 30px rgba(0, 0, 0, 0.5),
+        5px 5px 30px rgba(0, 0, 0, 0.5),
+        6px 6px 30px rgba(0, 0, 0, 0.5);
+*/
+
+    margin-left: 80px;
+    /*    margin: 0px 90px 80px 90px;*/
+
+
+
+    /*    padding: 1rem;*/
 
 
     /*
@@ -651,8 +714,9 @@ section {
     /*    background-image: url(books%2520small/itch.png);*/
     background-size: cover;
     width: 65vw;
-    height: 98vw;
-    padding: 1rem;
+    height: 92vw;
+    box-shadow: 30px 15px 30px rgba(0, 0, 0, 0.5);
+    /*    padding: 1rem;*/
 
 
     /*
@@ -668,8 +732,9 @@ section {
     /*    background-image: url(books%2520small/katinkagoldberg.png);*/
     background-size: cover;
     width: 65vw;
-    height: 98vw;
-    padding: 1rem;
+    height: 97vw;
+    box-shadow: 30px 15px 30px rgba(0, 0, 0, 0.5);
+    /*    padding: 1rem;*/
 
     /*
     margin-left: auto;
@@ -678,12 +743,13 @@ section {
 
 }
 
-.book_5 {
+.book_5 img {
     /*    background-image: url(books%2520small/sameti.png);*/
-    background-size: contain;
+    background-size: cover;
     width: 65vw;
-    height: 98vw;
-    padding: 1rem;
+    height: 86vw;
+    box-shadow: 30px 15px 30px rgba(0, 0, 0, 0.5);
+    /*    padding: 1rem;*/
 
     /*
     margin-left: auto;
@@ -704,7 +770,7 @@ section {
     background-image: url(img/billeder_05_content/New_Final_%20FLYER_JH.jpg);
     background-size: cover;
     width: 65vw;
-    height: 18vh;
+    height: 18vw;
     /*
     margin-left: auto;
     margin-right: auto;
@@ -714,38 +780,37 @@ section {
 #workshop_site .img_2 {
     background-image: url(img/billeder_05_content/Flyer_workshop_Calin_Kruse_crop.jpg);
     background-size: cover;
-    width: 65vw;
-    height: 18vh;
-    /*
-    margin-left: auto;
-    margin-right: auto;
-*/
+    width: 74vw;
+    height: 40.4vw;
+    margin-bottom: 10px;
+
 }
 
 #workshop_site .img_3 {
     background-image: url(img/billeder_05_content/work3.png);
     background-size: cover;
-    width: 65vw;
-    height: 18vh;
-    /*
-    margin-left: auto;
-    margin-right: auto;
-*/
+    width: 74vw;
+    height: 49.3vw;
+
 }
 
 /*---------Workshop design SLUT---------*/
 /*---------About design---------*/
 
-.mid2 {
-    flex-direction: column;
-
+#about_gallery .about_1,
+.about_2,
+.about_3,
+.about_4,
+.about_5 {
+    margin-bottom: 10px;
 }
 
 .about_1 {
     background-image: url(img/billeder_05_content/about_01.jpg);
     background-size: cover;
-    width: 65vw;
-    height: 43vw;
+    width: 74vw;
+    height: 49.3vw;
+
     /*
     margin-left: auto;
     margin-right: auto;
@@ -755,8 +820,9 @@ section {
 .about_2 {
     background-image: url(img/billeder_05_content/about_02.jpg);
     background-size: cover;
-    width: 65vw;
-    height: 43vw;
+    width: 74vw;
+    height: 49.3vw;
+
     /*
     margin-left: auto;
     margin-right: auto;
@@ -766,8 +832,9 @@ section {
 .about_3 {
     background-image: url(img/billeder_05_content/about_03.jpg);
     background-size: cover;
-    width: 65vw;
-    height: 43vw;
+    width: 74vw;
+    height: 49.3vw;
+
     /*
     margin-left: auto;
     margin-right: auto;
@@ -777,8 +844,9 @@ section {
 .about_4 {
     background-image: url(img/billeder_05_content/about_04.jpg);
     background-size: cover;
-    width: 65vw;
-    height: 43vw;
+    width: 74vw;
+    height: 49.3vw;
+
     /*
     margin-left: auto;
     margin-right: auto;
@@ -788,8 +856,8 @@ section {
 .about_5 {
     background-image: url(img/billeder_05_content/about_05.jpg);
     background-size: cover;
-    width: 65vw;
-    height: 43vw;
+    width: 74vw;
+    height: 49.3vw;
     /*
     margin-left: auto;
     margin-right: auto;
@@ -799,13 +867,37 @@ section {
 .about_6 {
     background-image: url(img/billeder_05_content/about_06.jpg);
     background-size: cover;
-    width: 65vw;
-    height: 43vw;
+    width: 74vw;
+    height: 49.3vw;
     /*
     margin-left: auto;
     margin-right: auto;
 */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -881,6 +973,29 @@ h1 {
     text-align: center;
     top: -85px;
     color: black;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 400;
+    z-index: 600;
+
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.3em;
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 300;
+    top: -88px;
+    position: relative;
+    color: black;
+    z-index: 600;
+    width: 100%;
+
+
+
 
 }
 
@@ -890,6 +1005,8 @@ h1 {
     margin: 0;
     padding: 0;
     transform: skewY(5deg);
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .baggrundsfarve {
@@ -905,7 +1022,7 @@ h1 {
 
 }
 
-.sectionwrapper {}
+
 
 
 /*
@@ -924,3 +1041,740 @@ h1 {
     padding-bottom: 150px;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*JEPPE*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*JEPPE*/
+
+/*JOSEFINE*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*JOSEFINE*/
