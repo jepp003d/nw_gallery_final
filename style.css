@@ -1,4 +1,4 @@
-/*----------fælles(1-150)----------*/
+/*----------Grunddesign----------*/
 body {
     background-color: #e6e6e6;
     padding: 0;
@@ -11,6 +11,7 @@ img {
     width: 100%;
 }
 
+/*----------FLEX----------*/
 .col_bottom,
 .col_top,
 .col,
@@ -25,6 +26,9 @@ img {
     display: flex;
     flex-wrap: wrap;
 }
+
+
+/*----------Dropshadow - billeder----------*/
 
 #news .col,
 #store .col_narrow,
@@ -55,33 +59,41 @@ img {
 }
 
 
+/*----------Grunddesign SLUT----------*/
 
 
 /*---------Tekst style---------*/
 
+
 h1 {
-    /*    position: absolute;*/
-    /*
+    position: relative;
+    width: 100%;
+    text-align: center;
+    top: -85px;
+    color: black;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.3em;
     text-transform: uppercase;
     font-size: 1.3rem;
-    text-align: center;
     font-weight: 400;
-*/
-    /*    left: 40vw;*/
+    z-index: 600;
+
 }
 
-/*
+
 h2 {
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.3em;
     font-size: 1.4rem;
     text-align: center;
-    margin-top: 3rem;
     font-weight: 300;
+    top: -88px;
+    position: relative;
+    color: black;
+    z-index: 600;
+    width: 100%;
+
 }
-*/
 
 h3 {
     font-family: 'Lato', sans-serif;
@@ -112,6 +124,49 @@ p {
     display: block;
     /*    margin: auto;*/
 }
+
+
+/*---------Tekst style SLUT---------*/
+
+
+/*------------------Slopes design----------------------------*/
+
+
+.baggrundsfarve:first-child h1 {}
+
+.content {
+    margin: 0;
+    padding: 0;
+    transform: skewY(5deg);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.baggrundsfarve {
+
+    transform: skewY(-5deg);
+    background-color: #e6e6e6;
+    z-index: 10;
+    padding: 50px;
+    position: relative;
+    top: -50px;
+    padding-bottom: 150px;
+
+}
+
+
+.baggrundsfarve2 {
+    transform: skewY(-5deg);
+    background-color: white;
+    z-index: 10;
+    padding: 50px;
+    position: relative;
+    top: -50px;
+    padding-bottom: 150px;
+
+}
+
+/*------------------Slopes design SLUT----------------------------*/
 
 /*---------Header design---------*/
 
@@ -296,59 +351,6 @@ header nav a {
 /*---------Landingpage design---------*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-section {
-
-    /*    padding: 1rem;*/
-}
-
 #overskrift {
     background-color: antiquewhite;
 }
@@ -370,8 +372,6 @@ section {
     align-content: center;
 }
 
-
-
 #news {}
 
 #news .col {
@@ -380,13 +380,6 @@ section {
     background-size: contain;
     width: 74vw;
     height: 42vw;
-
-    /*
-
-    margin-left: auto;
-    margin-right: auto;
-*/
-
 }
 
 #store {}
@@ -397,10 +390,6 @@ section {
     background-size: cover;
     width: 74vw;
     height: 110vw;
-    /*
-    margin-left: auto;
-    margin-right: auto;
-*/
 }
 
 #books {}
@@ -410,12 +399,7 @@ section {
     background-size: cover;
     width: 74vw;
     height: 98vw;
-    /*
-    margin-left: auto;
-    margin-right: auto;
-*/
 }
-
 
 #workshops {}
 
@@ -424,18 +408,10 @@ section {
     background-size: cover;
     width: 74vw;
     height: 42vw;
-    /*
-    margin-left: auto;
-    margin-right: auto;
-*/
 }
 
 
 #about {}
-
-
-
-
 
 #about .col_top {
     flex-basis: 300px;
@@ -445,14 +421,7 @@ section {
     overflow: hidden;
     width: 74vw;
     height: 49.3vw;
-
-    /*
-    margin-left: auto;
-    margin-right: auto;
-*/
 }
-
-
 
 
 #footer {}
@@ -473,16 +442,9 @@ section {
     background-image: url(img/FB_CLOSE_Flyer.jpg);
     position: relative;
     background-size: cover;
-    /*    width: 100%;*/
-    /*    height: 100%*/
-
     width: 74vw;
     height: 42vw;
 
-    /*
-    margin-left: auto;
-    margin-right: auto;
-*/
 }
 
 #kalender {
@@ -494,10 +456,7 @@ section {
     background-size: cover;
     width: 74vw;
     height: 74vw;
-    /*
-    margin-left: auto;
-    margin-right: auto;
-*/
+
 }
 
 #kalender .img_2 {
@@ -505,10 +464,6 @@ section {
     background-size: cover;
     width: 74vw;
     height: 74vw;
-    /*
-    margin-left: auto;
-    margin-right: auto;
-*/
 
 }
 
@@ -517,10 +472,7 @@ section {
     background-size: cover;
     width: 74vw;
     height: 74vw;
-    /*
-    margin-left: auto;
-    margin-right: auto;
-*/
+
 }
 
 #new_program .col_top {
@@ -528,10 +480,7 @@ section {
     background-size: cover;
     width: 74vw;
     height: 41.7vw;
-    /*
-    margin-left: auto;
-    margin-right: auto;
-*/
+
 }
 
 /*---------News design SLUT---------*/
@@ -552,10 +501,7 @@ section {
     background-size: cover;
     width: 74vw;
     height: 74vw;
-    /*
-    margin-left: auto;
-    margin-right: auto;
-*/
+
 }
 
 #onlineshop .store_2 {
@@ -563,10 +509,7 @@ section {
     background-size: cover;
     width: 74vw;
     height: 74vw;
-    /*
-    margin-left: auto;
-    margin-right: auto;
-*/
+
 }
 
 #onlineshop .pic_cap p {
@@ -574,10 +517,7 @@ section {
 }
 
 #onlineshop button {
-    /*
-    margin-left: auto;
-    margin-right: auto;
-*/
+
     /*----Her skal køb knappen styles-----*/
 }
 
@@ -591,10 +531,7 @@ section {
     background-size: cover;
     width: 74vw;
     height: 108.4vw;
-    /*
-    margin-left: auto;
-    margin-right: auto;
-*/
+
 }
 
 #shop_in_store .img_2 {
@@ -602,10 +539,7 @@ section {
     background-size: cover;
     width: 74vw;
     height: 108.4vw;
-    /*
-    margin-left: auto;
-    margin-right: auto;
-*/
+
 }
 
 #shop_in_store .img_3 {
@@ -613,10 +547,7 @@ section {
     background-size: cover;
     width: 74vw;
     height: 108.4vw;
-    /*
-    margin-left: auto;
-    margin-right: auto;
-*/
+
 }
 
 #shop_in_store .img_4 {
@@ -624,10 +555,7 @@ section {
     background-size: cover;
     width: 74vw;
     height: 108.4vw;
-    /*
-    margin-left: auto;
-    margin-right: auto;
-*/
+
 }
 
 #shop_in_store .pic_cap p {
@@ -645,169 +573,80 @@ section {
 
 
 #books_site .sectionwrapper {
-    /*    width: 100%;*/
-
-
     background-image: url(img/SVG/SVG/skewbooks.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    /*    padding-top: 75px;*/
     margin-top: 75px;
-
     display: flex;
     flex-wrap: wrap;
 
 }
 
 #books_site h1 {
-    /*    padding-top: 50px;*/
     top: -40px;
 }
 
-#books_site .menu-icon {
-
-
-}
+#books_site .menu-icon {}
 
 .scroll {
     position: relative;
     display: flex;
-    /*    flex-direction: row;*/
     overflow: scroll;
-
     align-items: flex-end;
     top: -30px;
-    /*
-    scroll-snap-type: x mandatory;
-    overflow-x: scroll;
-    display: flex;
-*/
+
 }
 
 .scroll div img {
-    /*    width: 20vw;*/
-    /*    padding: 40px;*/
     margin-top: 80px;
     margin-right: 90px;
-
-
-
-
-    /*    height: 30vw;*/
     object-fit: cover;
 
-
 }
 
-/*
-.bog {
-    padding: 1rem;
-        scroll-snap-align: center;
-
-}
-*/
 
 .book_1 img {
-    /*    background-image: url(books%2520small/bogudennavn.png); */
     background-size: cover;
-
     width: 65vw;
     height: 43vw;
-    /*    padding: 1rem;*/
-
-
-    /*
-    margin-left: auto;
-    margin-right: auto;
-*/
 
 }
 
 .book_2 img {
-    /*    background-image: url(books%2520small/cyclops.png);*/
     position: relative;
     background-size: cover;
     width: 65vw;
     height: 87vw;
     box-shadow: 30px 15px 30px rgba(0, 0, 0, 0.5);
-    /*
-    box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.5),
-        2px 2px 30px rgba(0, 0, 0, 0.5),
-        3px 3px 30px rgba(0, 0, 0, 0.5),
-        4px 4px 30px rgba(0, 0, 0, 0.5),
-        5px 5px 30px rgba(0, 0, 0, 0.5),
-        6px 6px 30px rgba(0, 0, 0, 0.5);
-*/
-
     margin-left: 80px;
-    /*    margin: 0px 90px 80px 90px;*/
-
-
-
-    /*    padding: 1rem;*/
-
-
-    /*
-    margin-left: auto;
-    margin-right: auto;
-*/
 
 
 }
 
 .book_3 img {
-    /*    background-image: url(books%2520small/itch.png);*/
     background-size: cover;
     width: 65vw;
     height: 92vw;
     box-shadow: 30px 15px 30px rgba(0, 0, 0, 0.5);
-    /*    padding: 1rem;*/
-
-
-    /*
-    margin-left: auto;
-    margin-right: auto;
-*/
-
-
 
 }
 
 .book_4 img {
-    /*    background-image: url(books%2520small/katinkagoldberg.png);*/
     background-size: cover;
     width: 65vw;
     height: 97vw;
     box-shadow: 30px 15px 30px rgba(0, 0, 0, 0.5);
-    /*    padding: 1rem;*/
-
-    /*
-    margin-left: auto;
-    margin-right: auto;
-*/
-
 }
 
 .book_5 img {
-    /*    background-image: url(books%2520small/sameti.png);*/
     background-size: cover;
     width: 65vw;
     height: 86vw;
     box-shadow: 30px 15px 30px rgba(0, 0, 0, 0.5);
-    /*    padding: 1rem;*/
-
-    /*
-    margin-left: auto;
-    margin-right: auto;
-*/
-}
-
 
 }
 
-*/
 /*---------Books design SLUT---------*/
-
 
 /*---------Workshop design---------*/
 
@@ -816,10 +655,6 @@ section {
     background-size: cover;
     width: 65vw;
     height: 18vw;
-    /*
-    margin-left: auto;
-    margin-right: auto;
-*/
 }
 
 #workshop_site .img_2 {
@@ -840,7 +675,8 @@ section {
 }
 
 /*---------Workshop design SLUT---------*/
-/*---------About design---------*/
+
+/*---------About design-----------------*/
 
 #about_gallery .about_1,
 .about_2,
@@ -856,10 +692,6 @@ section {
     width: 74vw;
     height: 49.3vw;
 
-    /*
-    margin-left: auto;
-    margin-right: auto;
-*/
 }
 
 .about_2 {
@@ -868,10 +700,6 @@ section {
     width: 74vw;
     height: 49.3vw;
 
-    /*
-    margin-left: auto;
-    margin-right: auto;
-*/
 }
 
 .about_3 {
@@ -880,10 +708,6 @@ section {
     width: 74vw;
     height: 49.3vw;
 
-    /*
-    margin-left: auto;
-    margin-right: auto;
-*/
 }
 
 .about_4 {
@@ -892,10 +716,6 @@ section {
     width: 74vw;
     height: 49.3vw;
 
-    /*
-    margin-left: auto;
-    margin-right: auto;
-*/
 }
 
 .about_5 {
@@ -903,10 +723,7 @@ section {
     background-size: cover;
     width: 74vw;
     height: 49.3vw;
-    /*
-    margin-left: auto;
-    margin-right: auto;
-*/
+
 }
 
 .about_6 {
@@ -914,912 +731,7 @@ section {
     background-size: cover;
     width: 74vw;
     height: 49.3vw;
-    /*
-    margin-left: auto;
-    margin-right: auto;
-*/
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*--------------------------SLOPES----------------------------*/
-
-
-
-
-h1 {
-    position: relative;
-    width: 100%;
-    text-align: center;
-    top: -85px;
-    color: black;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    font-size: 1.3rem;
-    font-weight: 400;
-    z-index: 600;
 
 }
 
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 0.3em;
-    font-size: 1.4rem;
-    text-align: center;
-    font-weight: 300;
-    top: -88px;
-    position: relative;
-    color: black;
-    z-index: 600;
-    width: 100%;
-
-
-
-
-}
-
-.baggrundsfarve:first-child h1 {}
-
-.content {
-    margin: 0;
-    padding: 0;
-    transform: skewY(5deg);
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.baggrundsfarve {
-
-    transform: skewY(-5deg);
-    background-color: #e6e6e6;
-    z-index: 10;
-    padding: 50px;
-    position: relative;
-    top: -50px;
-    padding-bottom: 150px;
-
-
-}
-
-
-
-
-/*
-.baggrundsfarve:nth-child(odd) {
-    background-color: white;
-}
-*/
-
-.baggrundsfarve2 {
-    transform: skewY(-5deg);
-    background-color: white;
-    z-index: 10;
-    padding: 50px;
-    position: relative;
-    top: -50px;
-    padding-bottom: 150px;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*JEPPE*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*JEPPE*/
-
-/*JOSEFINE*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*JOSEFINE*/
+/*---------About design SLUT-----------------*/
