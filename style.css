@@ -799,7 +799,7 @@ header nav a {
 
 /*-----------Oliver linjer 800-899-------------*/
 
-‘#footer .baggrundsfarve {
+#footer .baggrundsfarve {
     height: 35vw;
     width: 100%;
     background-color: #1e1e20;
