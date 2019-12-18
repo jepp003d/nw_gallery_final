@@ -925,6 +925,36 @@ header nav a {
 }
 
 
+#news .col,
+#store .col_narrow,
+#books .col_narrow,
+#workshops .col_top,
+#about .col_top,
+#close .col_wide,
+#kalender .img_1,
+#kalender .img_2,
+#kalender .img_3,
+#new_program .col_top,
+#onlineshop .store_1,
+#onlineshop .store_2,
+#shop_in_store .img_1,
+#shop_in_store .img_2,
+#shop_in_store .img_3,
+#shop_in_store .img_4,
+#workshop_site .img_2,
+#workshop_site .img_3,
+#about_gallery .about_1,
+#about_gallery .about_2,
+#about_gallery .about_3,
+#about_gallery .about_4,
+#about_gallery .about_5,
+#about_gallery .about_6,
+#workshop_jh .img_1,
+#workshop_book .img_2,
+#workshop_rosseel .img_3 {
+    box-shadow: 1px 1px 1px #000000;
+    /*    border-style: solid;*/
+}
 
 
 
@@ -934,10 +964,9 @@ header nav a {
 
 
 
-
-
-
-
+#workshop_rosseel h2 {
+    top: -25px;
+}
 
 
 
