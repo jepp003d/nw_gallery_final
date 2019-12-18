@@ -650,14 +650,14 @@ header nav a {
 
 /*---------Workshop design---------*/
 
-#workshop_site .img_1 {
+#workshop_jh .img_1 {
     background-image: url(img/billeder_05_content/New_Final_%20FLYER_JH.jpg);
     background-size: cover;
     width: 74vw;
     height: 41.7vw;
 }
 
-#workshop_site .img_2 {
+#workshop_book .img_2 {
     background-image: url(img/billeder_05_content/Flyer_workshop_Calin_Kruse_crop.jpg);
     background-size: cover;
     width: 74vw;
@@ -666,7 +666,7 @@ header nav a {
 
 }
 
-#workshop_site .img_3 {
+#workshop_rosseel .img_3 {
     background-image: url(img/billeder_05_content/work3.png);
     background-size: cover;
     width: 74vw;
