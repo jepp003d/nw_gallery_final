@@ -799,6 +799,57 @@ header nav a {
 
 /*-----------Oliver linjer 800-899-------------*/
 
+‘#footer .baggrundsfarve {
+    height: 35vw;
+    width: 100%;
+    background-color: #1e1e20;
+}
+
+#footer .col_top {
+    display: flex;
+    transform: skewY(5deg);
+    align-items: center;
+    color: #e6e6e6;
+
+}
+
+#footer .col_mid {
+    transform: skewY(5deg);
+    color: white;
+    width: 100%;
+
+
+}
+
+
+
+.instagram {
+    height: 15vw;
+    width: 15vw;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+
+}
+
+.facebook {
+    height: 15vw;
+    width: 15vw;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    color: transparent;
+    margin-right: 2vw;
+
+}
+
+#footer img {
+    transition: .3s;
+}
+
+#footer img:hover {
+    transform: scale(1.2);
+}
 
 
 
@@ -1040,3 +1091,393 @@ header nav a {
 
 
 /*-----------josefine linjer SLUT-------------*/
+
+/*-----------media-------------*/
+@media (min-width:760px) {
+    /*---------Landingpage design---------*/
+
+
+    #overskrift {
+        background-color: antiquewhite;
+    }
+
+    #splash {
+        height: 40vh;
+
+        background-size: cover;
+    }
+
+    #splash .logo {
+        background-image: url(img/logo/NW_Logo_big%20copy.png);
+        position: relative;
+        background-size: cover;
+        width: 65vw;
+        height: 27vw;
+        left: 4vw;
+        top: 20vw;
+        align-content: center;
+    }
+
+    #news {}
+
+    #news .col {
+        background-image: url(img/FB_CLOSE_Flyer.jpg);
+        position: relative;
+        background-size: contain;
+        width: 74vw;
+        height: 42vw;
+    }
+
+    #store {}
+
+    #store .top .col_narrow {
+        position: relative;
+        background-image: url(img/billeder_05_content/2);
+        background-size: cover;
+        width: 74vw;
+        height: 110vw;
+    }
+
+    #books {}
+
+    #books .col_narrow {
+        background-image: url(img/books/finalbooks/sameti.jpg);
+        background-size: cover;
+        width: 74vw;
+        height: 98vw;
+    }
+
+    #workshops {}
+
+    #workshops .col_top {
+        background-image: url(img/billeder_05_content/New_Final_%20FLYER_JH.jpg);
+        background-size: cover;
+        width: 74vw;
+        height: 42vw;
+    }
+
+
+    #about {}
+
+    #about .col_top {
+        flex-basis: 300px;
+        flex-grow: 1;
+        background-image: url(img/about.jpg);
+        background-size: cover;
+        overflow: hidden;
+        width: 74vw;
+        height: 49.3vw;
+    }
+
+
+    #footer {}
+
+    /*---------Landingpage design SLUT---------*/
+
+    /*---------News design---------*/
+
+    #overskrift_news {
+        width: 100%;
+        height: 15vh;
+        background-color: #e6e6e6;
+        background-size: cover;
+    }
+
+
+    #close .col_wide {
+        background-image: url(img/FB_CLOSE_Flyer.jpg);
+        position: relative;
+        background-size: cover;
+        width: 74vw;
+        height: 42vw;
+
+    }
+
+    #kalender {
+        background-color: #e6e6e6;
+    }
+
+    #kalender .img_1 {
+        background-image: url(img/billeder_05_content/kalender_01.jpg);
+        background-size: cover;
+        width: 74vw;
+        height: 74vw;
+
+    }
+
+    #kalender .img_2 {
+        background-image: url(img/billeder_05_content/kalender_02.jpg);
+        background-size: cover;
+        width: 74vw;
+        height: 74vw;
+
+    }
+
+    #kalender .img_3 {
+        background-image: url(img/billeder_05_content/kalender_03.jpg);
+        background-size: cover;
+        width: 74vw;
+        height: 74vw;
+
+    }
+
+    #new_program .col_top {
+        background-image: url(img/billeder_05_content/New_Final_%20FLYER_JH.jpg);
+        background-size: cover;
+        width: 74vw;
+        height: 41.7vw;
+
+    }
+
+    /*---------News design SLUT---------*/
+
+    /*---------Store design---------*/
+
+
+    #overskrift_news {
+        width: 100%;
+        height: 15vh;
+        background-color: #e6e6e6;
+        background-size: cover;
+        top: 15vw;
+    }
+
+    #onlineshop .store_1 {
+        background-image: url(img/billeder_05_content/store_01.jpg);
+        background-size: cover;
+        width: 74vw;
+        height: 74vw;
+
+    }
+
+    #onlineshop .store_2 {
+        background-image: url(img/billeder_05_content/store_02.jpg);
+        background-size: cover;
+        width: 74vw;
+        height: 74vw;
+
+    }
+
+    #onlineshop .pic_cap p {
+        text-align: center;
+    }
+
+    #onlineshop button {
+
+        /*----Her skal køb knappen styles-----*/
+    }
+
+
+    #shop_in_store {
+        background-color: #e6e6e6;
+    }
+
+    #shop_in_store .img_1 {
+        background-image: url(img/billeder_05_content/1.jpg);
+        background-size: cover;
+        width: 74vw;
+        height: 108.4vw;
+
+    }
+
+    #shop_in_store .img_2 {
+        background-image: url(img/billeder_05_content/2);
+        background-size: cover;
+        width: 74vw;
+        height: 108.4vw;
+
+    }
+
+    #shop_in_store .img_3 {
+        background-image: url(img/billeder_05_content/3);
+        background-size: cover;
+        width: 74vw;
+        height: 108.4vw;
+
+    }
+
+    #shop_in_store .img_4 {
+        background-image: url(img/billeder_05_content/4);
+        background-size: cover;
+        width: 74vw;
+        height: 108.4vw;
+
+    }
+
+    #shop_in_store .pic_cap p {
+        text-align: center;
+    }
+
+
+    #footer_store {
+        background-color: #ffffff;
+    }
+
+    /*---------Store design SLUT---------*/
+
+    /*---------Books design---------*/
+
+
+    #books_site .sectionwrapper {
+        background-image: url(img/SVG/SVG/skewbooks.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 75px;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    #books_site h1 {
+        top: -40px;
+    }
+
+    #books_site .menu-icon {}
+
+    .scroll {
+        position: relative;
+        display: flex;
+        overflow: scroll;
+        align-items: flex-end;
+        top: -30px;
+
+    }
+
+    .scroll div img {
+        margin-top: 80px;
+        margin-right: 90px;
+        object-fit: cover;
+
+    }
+
+
+    .book_1 img {
+        background-size: cover;
+        width: 65vw;
+        height: 43vw;
+
+    }
+
+    .book_2 img {
+        position: relative;
+        background-size: cover;
+        width: 65vw;
+        height: 87vw;
+        box-shadow: 30px 15px 30px rgba(0, 0, 0, 0.5);
+        margin-left: 80px;
+
+
+    }
+
+    .book_3 img {
+        background-size: cover;
+        width: 65vw;
+        height: 92vw;
+        box-shadow: 30px 15px 30px rgba(0, 0, 0, 0.5);
+
+    }
+
+    .book_4 img {
+        background-size: cover;
+        width: 65vw;
+        height: 97vw;
+        box-shadow: 30px 15px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .book_5 img {
+        background-size: cover;
+        width: 65vw;
+        height: 86vw;
+        box-shadow: 30px 15px 30px rgba(0, 0, 0, 0.5);
+
+    }
+
+    /*---------Books design SLUT---------*/
+
+    /*---------Workshop design---------*/
+
+    #workshop_jh .img_1 {
+        background-image: url(img/billeder_05_content/New_Final_%20FLYER_JH.jpg);
+        background-size: cover;
+        width: 74vw;
+        height: 41.7vw;
+    }
+
+    #workshop_book .img_2 {
+        background-image: url(img/billeder_05_content/Flyer_workshop_Calin_Kruse_crop.jpg);
+        background-size: cover;
+        width: 74vw;
+        height: 40.4vw;
+        margin-bottom: 10px;
+
+    }
+
+    #workshop_rosseel .img_3 {
+        background-image: url(img/billeder_05_content/work3.png);
+        background-size: cover;
+        width: 74vw;
+        height: 49.3vw;
+
+    }
+
+    /*---------Workshop design SLUT---------*/
+
+    /*---------About design-----------------*/
+
+    #about_gallery .about_1,
+    .about_2,
+    .about_3,
+    .about_4,
+    .about_5 {
+        margin-bottom: 10px;
+    }
+
+    .about_1 {
+        background-image: url(img/billeder_05_content/about_01.jpg);
+        background-size: cover;
+        width: 74vw;
+        height: 49.3vw;
+
+    }
+
+    .about_2 {
+        background-image: url(img/billeder_05_content/about_02.jpg);
+        background-size: cover;
+        width: 74vw;
+        height: 49.3vw;
+
+    }
+
+    .about_3 {
+        background-image: url(img/billeder_05_content/about_03.jpg);
+        background-size: cover;
+        width: 74vw;
+        height: 49.3vw;
+
+    }
+
+    .about_4 {
+        background-image: url(img/billeder_05_content/about_04.jpg);
+        background-size: cover;
+        width: 74vw;
+        height: 49.3vw;
+
+    }
+
+    .about_5 {
+        background-image: url(img/billeder_05_content/about_05.jpg);
+        background-size: cover;
+        width: 74vw;
+        height: 49.3vw;
+
+    }
+
+    .about_6 {
+        background-image: url(img/billeder_05_content/about_06.jpg);
+        background-size: cover;
+        width: 74vw;
+        height: 49.3vw;
+
+    }
+
+}
